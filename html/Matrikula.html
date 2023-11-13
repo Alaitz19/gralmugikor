@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script
-        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <script src= ../js/desplazamendua.js>  </script>
   
     <style>
         .blue-bg {
@@ -63,12 +68,23 @@
                 <h1>Matrikula</h1>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
-                <img
-                    src="https://m.media-amazon.com/images/I/61CtcCyFZSL._UF894,1000_QL80_.jpg"
-                    alt="Imagen" class="img-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="dropdown">
+                        <div class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Zer balditza bete behar ditut?
+                        </div>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <ul class="list-unstyled">
+                                <li>GRAL-era izena emateko ikasleak graduko kreditu guztiak (GRAL-aren kredituak izan ezik) gaindituta izan beharko ditu.</li>
+                                <li>Ikasleak ez baditu beharbesteko kredituak gainditu, aukera dauka GRAL-era matrikulatu daiteke falta zaizkion kredituetan matrikulatuta badago, baldin eta gehinez 18 kreditu gelditzen bazaizkio hautazko ikasgaietan.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
             <div class="col-12">
                 <h1>Grandes exitos</h1>
                 <h4>Chayanne</h4>
@@ -88,5 +104,11 @@
         </div>
     </div>
 </body>
+<script>
+    function toggleDropdown() {
+    var dropdownContent = document.getElementById('dropdownContent');
+    dropdownContent.classList.toggle('active');
+}
+</script>
     
 </html>
