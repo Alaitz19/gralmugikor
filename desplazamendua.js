@@ -1,37 +1,39 @@
-let contenedor = document.getElementById('contenedor');
-let paginaActual = 1;
+// script.js
 
-document.addEventListener('touchstart', handleTouchStart, false);
-document.addEventListener('touchmove', handleTouchMove, false);
+var startX;
 
-let x1 = null;
+$('#pageContainer').on('touchstart', function (e) {
+    startX = e.originalEvent.touches[0].clientX;
+});
 
-function handleTouchStart(event) {
-    x1 = event.touches[0].clientX;
+$('#pageContainer').on('touchend', function (e) {
+    var endX = e.originalEvent.changedTouches[0].clientX;
+    var threshold = 50; // Umbral para considerar el deslizamiento
+
+    if (startX - endX > threshold) {
+        // Deslizamiento hacia la izquierda, ir a la siguiente página
+        nextPage();
+    } else if (endX - startX > threshold) {
+        // Deslizamiento hacia la derecha, ir a la página anterior
+        prevPage();
+    }
+});
+
+function nextPage() {
+    var currentPage = $('#pageContainer').data('currentPage') || 0;
+    var pageCount = $('.page').length;
+    var nextPage = (currentPage + 1) % pageCount;
+
+    $('#pageContainer').css('transform', 'translateX(' + -nextPage * 100 + '%)');
+    $('#pageContainer').data('currentPage', nextPage);
 }
 
-function handleTouchMove(event) {
-    if (!x1) {
-        return;
-    }
+function prevPage() {
+    var currentPage = $('#pageContainer').data('currentPage') || 0;
+    var pageCount = $('.page').length;
+    var prevPage = (currentPage - 1 + pageCount) % pageCount;
 
-    let x2 = event.touches[0].clientX;
-    let deltaX = x2 - x1;
-
-    if (Math.abs(deltaX) > 50) { // Se considera un desplazamiento significativo
-        if (deltaX > 0 && paginaActual > 1) {
-            paginaActual--;
-        } else if (deltaX < 0 && paginaActual < 2) {
-            paginaActual++;
-        }
-
-        updateContenedor();
-        x1 = null;
-    }
-}
-
-function updateContenedor() {
-    let nuevaTransformacion = 'translateX(' + (paginaActual - 1) * -50 + '%)';
-    contenedor.style.transform = nuevaTransformacion;
+    $('#pageContainer').css('transform', 'translateX(' + -prevPage * 100 + '%)');
+    $('#pageContainer').data('currentPage', prevPage);
 }
 
