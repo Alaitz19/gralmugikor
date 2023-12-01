@@ -1,65 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-   
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="../js/desplazamendua.js"></script>
 
-
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-        <script src= ../js/desplazamendua.js>  </script>
-  
     <style>
+        
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-dark .navbar-toggler-icon {
+            background-color: #ffffff;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff;
+        }
+
         .blue-bg {
             background-color: LightGray;
             color: black;
+            padding: 20px 0;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .card-title {
+            color: #343a40;
+            cursor: pointer;
+        }
+
+        .Custom-button {
+            background-color: #343a40;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .search-wrapper {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .search-input {
+            padding: 8px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+
+        .search-icon {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .answer {
+            display: none;
+            margin-top: 15px;
         }
     </style>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-         <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
-         <a href="https://www.ehu.eus/eu/web/informatika-fakultatea/ikas/ikasketak/gradu-amaierako-proiektua">
-        <button class="Custom-button">
+        <a href="https://www.ehu.eus/eu/web/informatika-fakultatea/ikas/ikasketak/gradu-amaierako-proiektua">
+            <button class="Custom-button">
                 <img src="https://www.ehu.eus/documents/5672806/276978/logoUPVreducido.png/faa0a147-6763-3f7c-1898-933e32a19ac3?t=1491573827000"
                     alt="Imagen" class="img-fluid" style="width: 50px; height: 50px;">
-           
-        </button>
+            </button>
+        </a>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                    <a class="nav-link" href="#">Araudia</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="Araudia.html">Araudia</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Matrikula</a>
+                    <a class="nav-link" href="Matrikula.html">Matrikula</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Defentsa</a>
+                    <a class="nav-link" href="Defentsa.html">Defentsa</a>
                 </li>
-             <li class="nav-item">
-                    <a class="nav-link" href="#">Aurreko urteko GrAL-ak</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="AurrekoGral.html">Aurreko urteko GrAL-ak</a>
                 </li>
-              <li class="nav-item">
-                    <a class="nav-link" href="#">Galdetegia</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="Galdetegia.html">Galdetegia</a>
                 </li>
-             <li class="nav-item">
-                    <a class="nav-link" href="#">About us</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="AboutUs.html">About us</a>
                 </li>
             </ul>
         </div>
-           <div class="search-wrapper">
-                <input class="search-input" type="text" placeholder="Search">
-                <span class="search-icon" data-toggle="search-input">🔍</span>
-            </div>
+        <div class="search-wrapper">
+            <input class="search-input" type="text" placeholder="Search">
+            <span class="search-icon" data-toggle="search-input">🔍</span>
+        </div>
     </nav>
 
     <div class="container-fluid">
@@ -68,47 +122,60 @@
                 <h1>Matrikula</h1>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="dropdown">
-                        <div class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Zer balditza bete behar ditut?
-                        </div>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <ul class="list-unstyled">
-                                <li>GRAL-era izena emateko ikasleak graduko kreditu guztiak (GRAL-aren kredituak izan ezik) gaindituta izan beharko ditu.</li>
-                                <li>Ikasleak ez baditu beharbesteko kredituak gainditu, aukera dauka GRAL-era matrikulatu daiteke falta zaizkion kredituetan matrikulatuta badago, baldin eta gehinez 18 kreditu gelditzen bazaizkio hautazko ikasgaietan.</li>
-                            </ul>
-                        </div>
+
+        <div class="container mt-4">
+            <h2 class="mb-4">GRAL Matrikulazioa</h2>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title" onclick="toggleAnswer('question1')">Zer balditza bete behar ditut?</h5>
+                    <div id="question1" class="answer">
+                        <p>GRAL-era izena emateko ikasleak graduko kreditu guztiak (GRAL-aren kredituak izan ezik)
+                            gaindituta izan beharko ditu. Ikasleak ez baditu beharbesteko kredituak gainditu, aukera
+                            dauka GRAL-era matrikulatu daiteke falta zaizkion kredituetan matrikulatuta badago, baldin
+                            eta gehinez 18 kreditu gelditzen bazaizkio hautazko ikasgaietan.</p>
+                    </div>
+
+                    <h5 class="card-title mt-4" onclick="toggleAnswer('question2')">Nola aukeratu nire GRAL-aren gaia?</h5>
+                    <div id="question2" class="answer">
+                        <p><strong>Adostatutako lanak:</strong> Ikasleak argi badauka zeri buruz egin nahi duen
+                            bere lana, hau aurrera eramateko ikasleak bere lanerako zuzendari bat bilatu beharko du.
+                            Gaia bai ikasleari baita empresa bati ere bururutatua izan daiteke.</p>
+                        <p><strong>Ikasleak ez badu argi zeri buruz egin nahi duen lana:</strong> EHU-k hilero eskaitza
+                            publiko bat eskeintzen du GAURen. Ikasleak eskainitako lan bat egin nahi izanez gero, lana
+                            eskeintzen duenarekin harremanetan jarri beharko da. Behin adostuta <a
+                                href="mailto:dif.gral@ehu.eus">dif.gral@ehu.eus</a> helbidera mezu bat bidaliko dio
+                            berri hemanez, behin mezua bidalita ikasleari esleituko zaio ofizialki GRALa.</p>
+                        <p><strong>Kanpo erakunde baten egiten bada GRALa:</strong> Hitzarmen bat sinatuko da
+                            ikaslearen, unibertsitatearen eta erakundearen artean, eta lanak bai enpresako tutoreak bai
+                            GRALaren zuzendariak izango ditu.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h5 class="card-title" onclick="toggleAnswer('question3')">Nola egin matrikulazioa?</h5>
+                    <div id="question3" class="answer">
+                        <p>Aurrean aipatutako betebehar guztiak bete izanez gero ikasleak GRALan matrikulatu daiteke.
+                            Matrikula <strong>GAURen bitartez egingo da</strong>.</p>
+                        <p>Matrikula batek eskubidea ematen dio ikasleari ikasturteko 2 deialdi ofizialetara aurkeztera.
+                            Ikasturte batean ikasleak ez badu defendatu bere lana edo ez badu gainditu berriz egin behar
+                            izango du matrikulazioa. Hori del eta, gomendatzen da matrikula egitea GrALa defendatuko den
+                            urte berdinean egitea.</p>
                     </div>
                 </div>
             </div>
         </div>
-            <div class="col-12">
-                <h1>Grandes exitos</h1>
-                <h4>Chayanne</h4>
-                <p>En el álbum se recopilan sus mejores éxitos del año 1987 al año
-                    2000 en formato de audio remasterizado y digitalizado, y tres canciones inéditas,
-                    entre estas «Torero» e «Y tú te vas», dos éxitos a nivel mundial y primer lugar en
-                    países de Hispanoamérica, España y Estados Unidos.[cita requerida] Los videos
-                    musicales fueron grabados en Buenos Aires, Argentina.
-                    Contiene dos canciones versión remix de este álbum recopilatorio como "Salomé" de
-                    Atado a tu amor (1998) y "Baila, baila" de Volver a nacer (1996) y una nueva
-                    versión de la canción "Fiesta en América", originalmente de su álbum Chayanne '87
-                    (1987). Fue publicado en el formato CD y DVD. En la versión de audio (CD) contiene
-                    14 canciones de grandes éxitos y en vídeo (DVD) contiene 13 vídeos musicales del
-                    intérprete.
-                </p>
-            </div>
-        </div>
     </div>
+    </div>
+
+    <script>
+        function toggleAnswer(questionId) {
+            var answer = document.getElementById(questionId);
+            answer.style.display = (answer.style.display === 'none' || answer.style.display === '') ? 'block' : 'none';
+        }
+    </script>
 </body>
-<script>
-    function toggleDropdown() {
-    var dropdownContent = document.getElementById('dropdownContent');
-    dropdownContent.classList.toggle('active');
-}
-</script>
-    
+
 </html>
