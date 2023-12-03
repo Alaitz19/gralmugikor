@@ -5,79 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="../css/Argia.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script src="../js/desplazamendua.js"></script>
 
-    <style>
-        
-
-        .navbar {
-            background-color: #343a40;
-        }
-
-        .navbar-dark .navbar-toggler-icon {
-            background-color: #ffffff;
-        }
-
-        .navbar-nav .nav-link {
-            color: #ffffff;
-        }
-
-        .blue-bg {
-            background-color: LightGray;
-            color: black;
-            padding: 20px 0;
-        }
-
-        .container {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-        }
-
-        .card-title {
-            color: #343a40;
-            cursor: pointer;
-        }
-
-        .Custom-button {
-            background-color: #343a40;
-            border: none;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        .search-wrapper {
-            display: flex;
-            align-items: center;
-            margin-top: 10px;
-        }
-
-        .search-input {
-            padding: 8px;
-            border: 1px solid #ced4da;
-            border-radius: 5px;
-        }
-
-        .search-icon {
-            margin-left: 10px;
-            cursor: pointer;
-        }
-
-        .answer {
-            display: none;
-            margin-top: 15px;
-        }
-    </style>
 </head>
 
-<body>
+<body >
+    <header>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
@@ -118,28 +56,32 @@
             <span class="search-icon" data-toggle="search-input">🔍</span>
         </div>
     </nav>
+    </header>
 
+    <main>
     <div class="container-fluid">
         <div class="row blue-bg">
             <div class="col-12 text-center">
                 <h1>Matrikula</h1>
             </div>
         </div>
-
-        <div class="container mt-4">
-            <h2 class="mb-4">GRAL Matrikulazioa</h2>
-
+        <div class="container2 mt-2 ">
+            <h2 class="mb-4 text-center">GRAL Matrikulazioa</h2>
             <div class="card">
+
                 <div class="card-body">
-                    <h5 class="card-title" onclick="toggleAnswer('question1')">Zer balditza bete behar ditut?</h5>
-                    <div id="question1" class="answer">
-                        <p>GRAL-era izena emateko ikasleak graduko kreditu guztiak (GRAL-aren kredituak izan ezik)
+                    <h5 class="card-title" >Zer baldintza bete behar ditut? <button class="btn btn-outline-info" onclick="toggleAnswer('question1')"> <img src="../html/irudiak/caret-down-fill.svg"> </button></h5>
+                    <div id="question1" class="answer">  
+                       <p>GRAL-era izena emateko ikasleak graduko kreditu guztiak (GRAL-aren kredituak izan ezik)
                             gaindituta izan beharko ditu. Ikasleak ez baditu beharbesteko kredituak gainditu, aukera
                             dauka GRAL-era matrikulatu daiteke falta zaizkion kredituetan matrikulatuta badago, baldin
                             eta gehinez 18 kreditu gelditzen bazaizkio hautazko ikasgaietan.</p>
                     </div>
+                </div>
 
-                    <h5 class="card-title mt-4" onclick="toggleAnswer('question2')">Nola aukeratu nire GRAL-aren gaia?</h5>
+
+                 <div class="card-body">  
+                    <h5 class="card-title">Nola aukeratu nire GRAL-aren gaia? <button class="btn btn-outline-info" onclick="toggleAnswer('question2')"> <img src="../html/irudiak/caret-down-fill.svg"> </button></h5>
                     <div id="question2" class="answer">
                         <p><strong>Adostatutako lanak:</strong> Ikasleak argi badauka zeri buruz egin nahi duen
                             bere lana, hau aurrera eramateko ikasleak bere lanerako zuzendari bat bilatu beharko du.
@@ -153,12 +95,9 @@
                             ikaslearen, unibertsitatearen eta erakundearen artean, eta lanak bai enpresako tutoreak bai
                             GRALaren zuzendariak izango ditu.</p>
                     </div>
-                </div>
-            </div>
-
-            <div class="card mt-4">
-                <div class="card-body">
-                    <h5 class="card-title" onclick="toggleAnswer('question3')">Nola egin matrikulazioa?</h5>
+                 </div>
+                 <div class="card-body">
+                  <h5 class="card-title">Nola egin matrikulazioa? <button class="btn btn-outline-info" onclick="toggleAnswer('question3')"> <img src="../html/irudiak/caret-down-fill.svg">  </button></h5>
                     <div id="question3" class="answer">
                         <p>Aurrean aipatutako betebehar guztiak bete izanez gero ikasleak GRALan matrikulatu daiteke.
                             Matrikula <strong>GAURen bitartez egingo da</strong>.</p>
@@ -167,18 +106,33 @@
                             izango du matrikulazioa. Hori del eta, gomendatzen da matrikula egitea GrALa defendatuko den
                             urte berdinean egitea.</p>
                     </div>
-                </div>
+                 </div>
             </div>
         </div>
     </div>
+  
+ </main>
+<footer>
+    <div class="container-fluid">
+        <div class="row blue-bg">
+            <div class="col-12 text-center">
+                <h6>Kontaktua: pkekotaldea@gmail.com</h6>
+            </div>
+        </div>
     </div>
 
-    <script>
-        function toggleAnswer(questionId) {
-            var answer = document.getElementById(questionId);
-            answer.style.display = (answer.style.display === 'none' || answer.style.display === '') ? 'block' : 'none';
-        }
-    </script>
+</footer>
 </body>
+<script>
+    function toggleAnswer(id) {
+        var answer = document.getElementById(id);
+        if (answer.style.display === "none") {
+            answer.style.display = "block";
+        } else {
+            answer.style.display = "none";
+        }
+    }
+</script>
+
 
 </html>

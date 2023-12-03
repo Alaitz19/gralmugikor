@@ -1,1 +1,90 @@
+html,body,.full-height { height: 100%; }
+main{
+    height: 100vh;
+    background-color: #def7fc;
+}
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-dark  {
+    background-color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.blue-bg {
+    background-color: #def7fc;
+    color: black;
+    padding: 20px 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+.container2 {
+    background-color: #ffffff;
+    height: 75vh;
+    width: 75%;
+    padding: 20px;
+    margin-left: 12%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+
+.card-title {
+    color: #343a40;
+    cursor: pointer;
+}
+
+.Custom-button {
+    background-color: #343a40;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.search-input {
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.search-icon {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.answer {
+    display: none;
+    margin-top: 15px;
+}
+.first-color { 
+	background: #5585b5; 
+}
+	
+.second-color { 
+	background: #53a8b6; 
+}
+
+.third-color { 
+	background: #79c2d0; 
+}
+
+.fourth-color { 
+	background: #bbe4e9; 
+}
 
