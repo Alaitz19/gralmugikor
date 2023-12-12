@@ -15,13 +15,13 @@
 </head>
 <body>
     <header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <a href="https://www.ehu.eus/eu/web/informatika-fakultatea/ikas/ikasketak/gradu-amaierako-proiektua">
             <button class="Custom-button">
-                <img src="logo.jpg"
+                <img src="../html/irudiak/logo.jpg"
                     alt="Imagen" class="img-fluid" style="width: 50px; height: 50px;">
             </button>
         </a>
@@ -47,7 +47,7 @@
                     <a class="nav-link" href="Galdetegia.html">Galdetegia</a>
                 </li>
              <li class="nav-item">
-                    <a class="nav-link" href="AboutUs.html">About us</a>
+                    <a class="nav-link active" href="AboutUs.html">About us</a>
                 </li>
             </ul>
         </div>
@@ -66,31 +66,56 @@
         </div>
         <div class="container mt-5">
             <h1 class="font-weight-bold display-4"></h1>
-            <p><b> Web orrialde honek ez du informazio ofiziala eskaintzen, ingeniaritza informatikoko ikasleez sortuta baitago.  </b></p>
+            <p><b> Web orrialde honek ez du informazio ofiziala eskaintzen, ingenieritza informatikoko ikasleez sortuta baitago. Informazio ofiziala lortzeko EHU-UPV-ko logoan click egin.  </b></p>
           </div>
+          <div class="container mt-6">
+            <h2>Kontaktua</h2>
+            <form id="forma">
+                <div class="form-group">
+                    <label for="nombre">Izena:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email-a:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mezua:</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submitBtn">Bidali</button>
+                <a href="mailto:pkekotaldea@email.com" target="_blank" class="btn btn-primary">Email</a>
+                
 
-
+            </form>
+            <div id="mezuaBidalita" style="display: none;">
+                <p>¡Mezua bidalita!</p>
+            </div>
+        </div>
         <div class="container mt-6">
-            <div class="row">
-              <div class="col-lg-4 mb-4">
-                <img src="../html/irudiak/pertsona.png" alt="Ekaitz" class="img-fluid rounded-circle">
-                <h3 class="text-center mt-3">Ekaitz Murillo </h3>
-                
-              </div>
-              <div class="col-lg-4 mb-4">
-                <img src="../html/irudiak/pertsona.png" alt="Mikel" class="img-fluid rounded-circle">
-                <h3 class="text-center mt-3">Mikel Amundarain</h3>
-                
-              </div>
-              <div class="col-lg-4 mb-4">
-                <img src="../html/irudiak/alaitz.jpg" alt="Alaitz" class="img-fluid rounded-circle">
-                <h3 class="text-center mt-3">Alaitz Shan Ye</h3>
-                
-              </div>
+            <div class="card-group">
+                <div class="card">
+                    <img src="../html/irudiak/ekaitz.jpeg" alt="Mikel" class="img-fluid rounded-circle"style="border: 4px; padding: 10px;">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Ekaitz Murillo</h5>
+                    </div>
+                </div>
+                  <div class="card">
+                    <img src="../html/irudiak/pertsona.png" alt="Mikel" class="img-fluid rounded-circle "style="border: 4px; padding: 10px;">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Mikel Amundarain</h5>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="../html/irudiak/alaitz.jpg" alt="Alaitz" class="img-fluid rounded-circle" style="border: 4px; padding: 10px;">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Alaitz Shan Ye</h5>
+                    </div>
+                  </div>
             </div>
           </div>
         </main>
-        <footer>
+        <footer class="footer fixed-bottom">
             <div class="container-fluid">
                 <div class="row blue-bg">
                     <div class="col-12 text-center">
@@ -101,4 +126,22 @@
         
         </footer>
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var formu = document.getElementById('forma');
+        var mezua = document.getElementById('mezuaBidalita');
+        var submitBtn = document.getElementById('submitBtn');
+
+        submitBtn.addEventListener('click', function () {
+
+            mezua.style.display = 'block';
+
+           
+            setTimeout(function () {
+                mezua.style.display = 'none';
+            }, 6000); // 5000 milisegundo)
+        });
+    });
+</script>
+    
 </html>

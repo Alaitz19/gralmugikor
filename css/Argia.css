@@ -1,7 +1,10 @@
-html,body,.full-height { height: 100%; }
-main{
-    height: 100vh;
+html,body,.full-height{ height: 100%; }
+main {
+    min-height: 100vh; /* Usa min-height para asegurarte de que el color azul se extienda al menos al tamaño de la ventana */
     background-color: #def7fc;
+    margin-top: 80px;
+    margin-bottom: auto; /* Agrega un margen negativo para compensar el espacio vacío en la parte inferior */
+    padding-bottom: 100px; /* Agrega un relleno para compensar el margen negativo */
 }
 .navbar {
     background-color: #343a40;
@@ -43,7 +46,16 @@ main{
     color: #343a40;
     cursor: pointer;
 }
-
+.custom-table {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #dee2e6; 
+    margin-bottom: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.yellow-underline {
+    border-bottom: 2px solid yellow;
+}
 .Custom-button {
     background-color: #343a40;
     border: none;
