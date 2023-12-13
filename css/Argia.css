@@ -99,4 +99,13 @@ main {
 .fourth-color { 
 	background: #bbe4e9; 
 }
+.carousel-control-prev-icon{
+    background-color: black;
+}
+.carousel-control-next-icon{
+    background-color: black;
+}
+.container-img{
+    object-fit: cover;
+}
 
