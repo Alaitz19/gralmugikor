@@ -61,10 +61,179 @@
     <div class="container-fluid">
         <div class="row blue-bg">
             <div class="col-12 text-center">
-                <h1>Galdetegia</h1>
+                <h1>GALDETEGIA</h1>
             </div>
         </div>
-        
+    </div>
+
+    <div class="container mt-4">
+        <form id="quizForm">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">1: Zenbat GrAL mota desberdin bereizten dira?</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" id="q1a1" value="2">
+                        <label class="form-check-label" for="q1a1">2</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" id="q1a2" value="3">
+                        <label class="form-check-label" for="q1a2">3</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" id="q1a3" value="4">
+                        <label class="form-check-label" for="q1a3">4</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" id="q1a4" value="Ez dago mota bat baino gehiago">
+                        <label class="form-check-label" for="q1a4">Ez dago mota bat baino gehiago</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title">2: Zenbat kredituko balioa du GrAL-ak?</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" id="q2a1" value="6">
+                        <label class="form-check-label" for="q2a1">6</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" id="q2a2" value="12">
+                        <label class="form-check-label" for="q2a2">12</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" id="q2a3" value="16">
+                        <label class="form-check-label" for="q2a3">16</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" id="q2a4" value="18">
+                        <label class="form-check-label" for="q2a4">18</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title">3: Zein dira defentsako epaimahaiko rolak?</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="q3" id="q3a1" value="Zuzendaria">
+                        <label class="form-check-label" for="q3a1">Zuzendaria</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="q3" id="q3a2" value="Idazkaria">
+                        <label class="form-check-label" for="q3a2">Idazkaria</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="q3" id="q3a3" value="Arloan ezagutzak dituen kidea">
+                        <label class="form-check-label" for="q3a3">Arloan ezagutzak dituen kidea</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="q3" id="q3a4" value="Laguntzailea">
+                        <label class="form-check-label" for="q3a4">Laguntzailea</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title">4: Behin matrikulatuta, zenbat deialditara aurkeztu dezaket nire burua?</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" id="q4a1" value="2 deialditara matrikulatutako ikasturtean">
+                        <label class="form-check-label" for="q4a1">2 deialditara matrikulatutako ikasturtean</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" id="q4a2" value="2 deialdietara edozein ikasturtean">
+                        <label class="form-check-label" for="q4a2">2 deialdietara edozein ikasturtean</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" id="q4a3" value="Deialdi bakarrera">
+                        <label class="form-check-label" for="q4a3">Deialdi bakarrera</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" id="q4a4" value="Behar ditudan guztietara">
+                        <label class="form-check-label" for="q4a4">Behar ditudan guztietara</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title">5: Ez baditut kreditu guztiak gaindituta matrikula naiteke GrALera?</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q5" id="q5a1" value="Bai, errektoretzara karta bat bidaliz">
+                        <label class="form-check-label" for="q5a1">Bai, errektoretzara karta bat bidaliz</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q5" id="q5a2" value="Bai, falta bazaizun kredituak 18 edo gutxiago badira eta ikasturte berean matrikulatzen bazara GrALera eta falta zaizkizun  kredituetara">
+                        <label class="form-check-label" for="q5a2">Bai, falta bazaizun kredituak 18 edo gutxiago badira eta ikasturte berean matrikulatzen bazara GrALera eta falta zaizkizun  kredituetara</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q5" id="q5a3" value="Ez, bakarrik matrikula naiteke kreditu guztiak gainditu baditut">
+                        <label class="form-check-label" for="q5a3">Ez, bakarrik matrikula naiteke kreditu guztiak gainditu baditut</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title">6: Non entregatuko da memoria?</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q6" id="q6a1" value="ADDIn">
+                        <label class="form-check-label" for="q6a1">ADDIn</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q6" id="q6a2" value="Egelan">
+                        <label class="form-check-label" for="q6a2">Egelan</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q6" id="q6a3" value="GAURen">
+                        <label class="form-check-label" for="q6a3">GAURen</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title">7: Norena izango da GrALaren propietate intelektuala?</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q7" id="q7a1" value="Ikaslearena">
+                        <label class="form-check-label" for="q7a1">Ikaslearena</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q7" id="q7a2" value="Lanaren zuzendariarena">
+                        <label class="form-check-label" for="q7a2">Lanaren zuzendariarena</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q7" id="q7a3" value="Unibertsitatearena">
+                        <label class="form-check-label" for="q7a3">Unibertsitatearena</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title">8: Posterra zein formatutan bidali behar da?</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q8" id="q8a1" value="Docs">
+                        <label class="form-check-label" for="q8a1">Docs</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q8" id="q8a2" value="Odt">
+                        <label class="form-check-label" for="q8a2">Odt</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q8" id="q8a3" value="Pdf">
+                        <label class="form-check-label" for="q8a3">Pdf</label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-primary mt-3" onclick="submitQuiz()">Emaitzak ikusi</button>
+        </form>
+
+        <div id="results" class="mt-4"></div>
+    </div>
+
 </main>
 <footer class="footer fixed-bottom">
     <div class="container-fluid">
@@ -76,5 +245,59 @@
     </div>
 
 </footer>
+
+<!--QUIZ SCRIPT-->
+<script>
+    function submitQuiz() {
+        const answers = {
+            q1: $('input[name="q1"]:checked').val(),
+            q2: $('input[name="q2"]:checked').val(),
+            q3: $('input[name="q3"]:checked').map(function() {
+                return $(this).val();
+            }).get().join(', '),
+            q4: $('input[name="q4"]:checked').val(),
+            q5: $('input[name="q5"]:checked').val(),
+            q6: $('input[name="q6"]:checked').val(),
+            q7: $('input[name="q7"]:checked').val(),
+            q8: $('input[name="q8"]:checked').val(),
+        };
+
+        const correctAnswers = {
+            q1: "3",
+            q2: "12",
+            q3: "Zuzendaria, Idazkaria, Arloan ezagutzak dituen kidea",
+            q4: "2 deialditara matrikulatutako ikasturtean",
+            q5: "Bai, falta bazaizun kredituak 18 edo gutxiago badira eta ikasturte berean matrikulatzen bazara GrALera eta falta zaizkizun  kredituetara",
+            q6: "ADDIn",
+            q7: "Ikaslearena",
+            q8: "Pdf",
+        };
+
+        const results = [];
+        for (const question in answers) {
+            const questionNumber = question.substring(1);
+            const isCorrect = answers[question] === correctAnswers[question];
+            results.push({
+                question: questionNumber,
+                isCorrect,
+                correctAnswer: correctAnswers[question],
+            });
+        }
+
+        displayResults(results);
+    }
+
+    function displayResults(results) {
+        const resultsContainer = $('#results');
+        resultsContainer.empty();
+
+        resultsContainer.append('<h4>Results:</h4>');
+        for (const result of results) {
+            const resultText = result.isCorrect ? `<span style="color: green;">${result.question}. Zuzena!</span>` :
+                `<span style="color: red;">${result.question}. Okerra! ${result.correctAnswer}</span>`;
+            resultsContainer.append(`<p>${resultText}</p>`);
+        }
+    }
+</script>
 </body>
 </html>
